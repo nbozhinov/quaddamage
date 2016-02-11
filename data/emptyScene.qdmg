@@ -22,8 +22,8 @@ RectLight l1 {
 	color	   (1, 1, 1)
 	power	   12
 	scale (34, 34, 34)
-	xSubd  6
-	ySubd  6
+	xSubd  4
+	ySubd  4
 }
 
 Plane plane {
@@ -31,11 +31,11 @@ Plane plane {
 
 Sphere B {
 	O (0, 0, 0)
-	R 15.1
+	R 4.0002
 }
 
 ImplicitSurface imps {
-	expr x^2+y^2+z^2-225
+	expr x^2/16+y^2/4+z^2/4-1
 	boundary B
 }
 
@@ -51,9 +51,6 @@ Lambert bluish {
 	color (0.25, 0.25, 0.75)
 }
 
-Refl refl {
-	multiplier 0.999
-}
 
 Node left {
 	geometry plane
@@ -91,6 +88,6 @@ Node back {
 Node implicitSurface {
 	geometry imps
 	translate (53, 42, 60)
-	//scale (6, 6, 6)
+	scale (6, 6, 6)
 	shader reddish
 }

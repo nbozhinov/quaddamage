@@ -504,14 +504,6 @@ int main ( int argc, char** argv )
 		return -1;
 	}
 
-	/*Sphere *s = new Sphere(Vector(0, 0, 0), 4.00002);
-	ImplicitSurface *imps = new ImplicitSurface([](double x, double y, double z) { return x*x/16 + y*y/4 + z*z/4 - 1; }, Vector(0, 0, 0), s);
-    Node *n1 = new Node(imps, scene.nodes[0]->shader);
-    n1->transform.scale(6, 6, 6);
-    n1->transform.rotate(0, 90, 0);
-    n1->transform.translate(Vector(53, 42, 60));
-    scene.nodes.push_back(n1);*/
-
 	initGraphics(scene.settings.frameWidth, scene.settings.frameHeight,
 		scene.settings.interactive && scene.settings.fullscreen);
 	setWindowCaption("Quad Damage: preparing...");

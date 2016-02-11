@@ -4,9 +4,9 @@
 #include <functional>
 #include <string>
 #include <stack>
+#include <cmath>
 #include <list>
 #include "geometry.h"
-#include "bbox.h"
 using std::string;
 using std::stack;
 using std::list;
