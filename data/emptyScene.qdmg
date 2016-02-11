@@ -1,0 +1,96 @@
+GlobalSettings {
+	frameWidth          640
+	frameHeight         480
+	maxTraceDepth 8
+	ambientLight (0.1, 0.1, 0.1)
+	gi 			off
+	numPaths 	10
+}
+
+Camera camera {
+	position     (50,52,295.6)
+    yaw          180
+    pitch        -2.4
+	fov           47
+}
+
+//////////////////////// LIGHTS ////////////////////////////////////////////
+
+RectLight l1 {
+	translate  (50, 81.33, 81.6)
+	rotate     (0, 0, 0)
+	color	   (1, 1, 1)
+	power	   12
+	scale (34, 34, 34)
+	xSubd  6
+	ySubd  6
+}
+
+Plane plane {
+}
+
+Sphere B {
+	O (0, 0, 0)
+	R 15.1
+}
+
+ImplicitSurface imps {
+	expr x^2+y^2+z^2-225
+	boundary B
+}
+
+Lambert gray {
+	color (0.75, 0.75, 0.75)
+}
+
+Lambert reddish {
+	color (0.75, 0.25, 0.25)
+}
+
+Lambert bluish {
+	color (0.25, 0.25, 0.75)
+}
+
+Refl refl {
+	multiplier 0.999
+}
+
+Node left {
+	geometry plane
+	rotate (0, 0, -90)
+	translate (120, 0, 0)
+	shader reddish
+}
+
+Node right {
+	geometry plane
+	rotate (0, 0, 90)
+	translate (-20, 0, 0)
+	shader bluish
+}
+
+Node floor {
+	geometry plane
+	shader gray
+}
+
+Node ceiling {
+	geometry plane
+	rotate (0, 0, 180)
+	translate (0, 93.6, 0)
+	shader gray
+}
+
+Node back {
+	geometry plane
+	rotate (0, -90, 0)
+	translate (0, 0, -160)
+	shader gray
+}
+
+Node implicitSurface {
+	geometry imps
+	translate (53, 42, 60)
+	//scale (6, 6, 6)
+	shader reddish
+}
