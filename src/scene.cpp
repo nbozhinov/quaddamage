@@ -47,6 +47,7 @@
 #include "heightfield.h"
 #include "lights.h"
 #include <assert.h>
+#include "implicit_surface.h"
 using std::vector;
 using std::string;
 
@@ -67,7 +68,7 @@ class ParsedBlockImpl: public ParsedBlock {
 		char propName[128];
 		char propValue[256];
 		bool recognized;
-		
+
 		LineInfo() {}
 		LineInfo(int line, const char* name, const char* value): line(line)
 		{
@@ -370,7 +371,7 @@ public:
 	Texture* findTextureByName(const char* name);
 	Geometry* findGeometryByName(const char* name);
 	Node* findNodeByName(const char* name);
-	
+
 	bool parse(const char* filename, Scene* s);
 };
 
@@ -848,6 +849,7 @@ bool GlobalSettings::needAApass()
 
 SceneElement* DefaultSceneParser::newSceneElement(const char* className)
 {
+    if (!strcmp(className, "ImplicitSurface")) return new ImplicitSurface;
 	if (!strcmp(className, "GlobalSettings")) return &s->settings;
 	if (!strcmp(className, "Plane")) return new Plane;
 	if (!strcmp(className, "Sphere")) return new Sphere;
