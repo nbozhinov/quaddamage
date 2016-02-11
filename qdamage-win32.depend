@@ -247,7 +247,7 @@
 	"constants.h"
 	<algorithm>
 
-1455148293 source:d:\raytracing\raytracing-code\src\main.cpp
+1455179240 source:d:\raytracing\raytracing-code\src\main.cpp
 	<SDL/SDL.h>
 	<SDL/SDL_events.h>
 	<math.h>
@@ -588,14 +588,14 @@
 	<assert.h>
 	"implicit_surface.h"
 
-1455148210 source:d:\raytracing\raytracing-code\src\implicit_surface.cpp
+1455149359 source:d:\raytracing\raytracing-code\src\implicit_surface.cpp
 	"implicit_surface.h"
 
-1455147323 d:\raytracing\raytracing-code\src\implicit_surface.h
+1455151214 d:\raytracing\raytracing-code\src\implicit_surface.h
 	<functional>
 	<string>
 	<stack>
+	<cmath>
 	<list>
 	"geometry.h"
-	"bbox.h"
 
