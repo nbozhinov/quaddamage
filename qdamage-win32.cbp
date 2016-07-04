@@ -77,6 +77,7 @@
 		<Unit filename="src/mesh.h" />
 		<Unit filename="src/random_generator.cpp" />
 		<Unit filename="src/random_generator.h" />
+		<Unit filename="src/render.h" />
 		<Unit filename="src/scene.cpp" />
 		<Unit filename="src/scene.h" />
 		<Unit filename="src/sdl.cpp" />

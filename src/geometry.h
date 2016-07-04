@@ -79,7 +79,7 @@ public:
 		pb.getVectorProp("O", &O);
 		pb.getDoubleProp("R", &R);
 	}
-	
+
 	bool intersect(const Ray& ray, IntersectionInfo& info);
 };
 
@@ -103,7 +103,7 @@ class CsgOp: public Geometry {
 	void findAllIntersections(Ray ray, Geometry* geom, std::vector<IntersectionInfo>& ips);
 public:
 	Geometry *left, *right;
-	
+
 	virtual bool boolOp(bool inA, bool inB) = 0;
 
 	void fillProperties(ParsedBlock& pb)
@@ -113,7 +113,7 @@ public:
 		pb.getGeometryProp("left", &left);
 		pb.getGeometryProp("right", &right);
 	}
-	
+
 	bool intersect(const Ray& ray, IntersectionInfo& info);
 };
 
@@ -139,10 +139,10 @@ struct Node: public Intersectable, public SceneElement {
 	Shader* shader;
 	Transform transform;
 	Texture* bump;
-	
+
 	Node() { bump = NULL; }
 	Node(Geometry* g, Shader* s) { geom = g; shader = s; bump = NULL; }
-	
+
 	// from Intersectable:
 	bool intersect(const Ray& ray, IntersectionInfo& data);
 
@@ -154,6 +154,57 @@ struct Node: public Intersectable, public SceneElement {
 		pb.getShaderProp("shader", &shader);
 		pb.getTransformProp(transform);
 		pb.getTextureProp("bump", &bump);
+	}
+};
+
+class Animation: public SceneElement {
+    Node* node;
+    Vector translate;
+    Vector rotate;
+    Vector scale;
+    int start, duration, repCount;
+    Transform t;
+    Transform reset;
+public:
+    Animation() :
+        node(NULL), t(), reset(), translate(0, 0, 0), rotate(0, 0, 0), scale(0, 0, 0)
+        {};
+    ElementType getElementType() const { return ELEM_ANIMATION; }
+	void fillProperties(ParsedBlock& pb)
+	{
+	    pb.getNodeProp("node", &node);
+	    pb.getIntProp("start", &start);
+	    pb.getIntProp("duration", &duration);
+	    pb.getIntProp("repetitions", &repCount);
+	    pb.getVectorProp("translate", &translate);
+	    pb.getVectorProp("rotate", &rotate);
+	    pb.getVectorProp("scale", &scale);
+	    t.reset();
+	    reset.reset();
+	    if (scale[0] != 0 && scale[1] != 0 && scale[2] != 0)
+            t.scale(pow(scale[0], 1.0 / duration), pow(scale[1], 1.0 / duration), pow(scale[2], 1.0 / duration));
+	    t.rotate(rotate[0] / duration, rotate[1] / duration, rotate[2] / duration);
+	    t.translate(translate / duration);
+	    if (scale[0] != 0 && scale[1] != 0 && scale[2] != 0)
+            reset.scale(1.0 / scale[0], 1.0 / scale[1], 1.0 / scale[2]);
+	    reset.rotate(-rotate[0], -rotate[1], -rotate[2]);
+	    reset.translate(-translate);
+	}
+	void apply(int frameNo)
+	{
+	    if (frameNo <= start || (repCount > 0 && frameNo - start > (duration + 1) * repCount)) return;
+	    if ((frameNo - start) % (duration + 1) == 0) {
+            node->transform.transform = node->transform.transform * reset.transform;
+            node->transform.inverseTransform = reset.inverseTransform * node->transform.inverseTransform;
+            node->transform.transposedInverse = transpose(node->transform.inverseTransform);
+            node->transform.offset += reset.offset;
+            printf("Reset animation!\n");
+            return;
+	    }
+        node->transform.transform = node->transform.transform * t.transform;
+        node->transform.inverseTransform =  t.inverseTransform * node->transform.inverseTransform;
+        node->transform.transposedInverse = transpose(node->transform.inverseTransform);
+        node->transform.offset += t.offset;
 	}
 };
 

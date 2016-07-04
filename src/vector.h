@@ -20,7 +20,7 @@
 /**
  * @File vector.h
  * @Brief defines the Vector class (a 3D vector with the usual algebraic operations)
- */ 
+ */
 #ifndef __VECTOR3D_H__
 #define __VECTOR3D_H__
 
@@ -32,7 +32,7 @@ struct Vector {
 		struct { double x, y, z; };
 		double v[3];
 	};
-	
+
 	Vector () {}
 	Vector(double _x, double _y, double _z) { set(_x, _y, _z); }
 	void set(double _x, double _y, double _z)
@@ -97,8 +97,19 @@ struct Vector {
 	}
 	inline double& operator[](const int index) { return v[index]; }
 	inline const double& operator[](const int index) const { return v[index]; }
-	
+
 	void print() const { printf("(%.9lf, %.9lf, %.9lf)", x, y, z); }
+
+	inline bool operator == (const Vector& other)
+	{
+		return this->x == other.x &&
+            this->y == other.y &&
+            this->z == other.z;
+	}
+	inline bool operator != (const Vector& other)
+	{
+		return !(*this == other);
+	}
 };
 
 inline Vector operator + (const Vector& a, const Vector& b)
@@ -187,7 +198,7 @@ inline void orthonormalSystem(const Vector& inRay, Vector& ray1, Vector& ray2)
 
 enum {
 	RF_DEBUG = 1,
-	
+
 	RF_DIFFUSE = 2,
 };
 

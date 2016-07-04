@@ -1,10 +1,11 @@
 GlobalSettings {
 	frameWidth          640
 	frameHeight         480
-	maxTraceDepth 8
+	maxTraceDepth 4
 	ambientLight (0.1, 0.1, 0.1)
 	gi 			off
-	numPaths 	10
+	numPaths 	6
+	wantAA false
 }
 
 Camera camera {
@@ -21,7 +22,7 @@ RectLight l1 {
 	rotate     (0, 0, 0)
 	color	   (1, 1, 1)
 	power	   12
-	scale (34, 34, 34)
+	scale (26, 26, 26)
 	xSubd  4
 	ySubd  4
 }
@@ -32,11 +33,6 @@ Plane plane {
 Sphere B {
 	O (0, 0, 0)
 	R 4.0002
-}
-
-ImplicitSurface imps {
-	expr x^2/16+y^2/4+z^2/4-1
-	boundary B
 }
 
 Lambert gray {
@@ -85,9 +81,18 @@ Node back {
 	shader gray
 }
 
-Node implicitSurface {
-	geometry imps
-	translate (53, 42, 60)
-	scale (6, 6, 6)
+Node sphere {
+	geometry B
+	translate (13, 42, 60)
+	scale (5, 5, 5)
 	shader reddish
+}
+
+Animation anim {
+	node sphere
+	start 0
+	duration 5
+	repetitions 0
+	translate (60, 0 , 0)
+	scale (1.0, 2.0, 1.0)
 }

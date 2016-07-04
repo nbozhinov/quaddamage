@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1453309165 source:d:\raytracing\raytracing-code\src\bitmap.cpp
+1453312765 source:d:\raytracing\raytracing-code\src\bitmap.cpp
 	<stdio.h>
 	<string.h>
 	"color.h"
@@ -11,23 +11,23 @@
 	<vector>
 	<algorithm>
 
-1453309165 d:\raytracing\raytracing-code\src\color.h
+1453312765 d:\raytracing\raytracing-code\src\color.h
 	"util.h"
 
-1453309165 d:\raytracing\raytracing-code\src\util.h
+1453312765 d:\raytracing\raytracing-code\src\util.h
 	<stdlib.h>
 	<math.h>
 	<string>
 	<stdio.h>
 	"constants.h"
 
-1453309165 d:\raytracing\raytracing-code\src\constants.h
+1453312765 d:\raytracing\raytracing-code\src\constants.h
 
-1453309165 d:\raytracing\raytracing-code\src\bitmap.h
+1453312765 d:\raytracing\raytracing-code\src\bitmap.h
 	<functional>
 	"color.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfrgbafile.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfrgbafile.h
 	"ImfHeader.h"
 	"ImfFrameBuffer.h"
 	"ImfRgba.h"
@@ -39,7 +39,7 @@
 	"ImfNamespace.h"
 	"ImfForward.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfheader.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfheader.h
 	"ImfLineOrder.h"
 	"ImfCompression.h"
 	"ImfName.h"
@@ -55,87 +55,87 @@
 	<iosfwd>
 	<string>
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imflineorder.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imflineorder.h
 	"ImfNamespace.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfnamespace.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfnamespace.h
 	"OpenEXRConfig.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\openexrconfig.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\openexrconfig.h
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfcompression.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfcompression.h
 	"ImfNamespace.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfname.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfname.h
 	<string.h>
 	"ImfNamespace.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imftiledescription.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imftiledescription.h
 	"ImfNamespace.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfint64.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfint64.h
 	"ImathInt64.h"
 	"ImfNamespace.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathint64.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathint64.h
 	"ImathNamespace.h"
 	<limits.h>
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathnamespace.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathnamespace.h
 	"IlmBaseConfig.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\ilmbaseconfig.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\ilmbaseconfig.h
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathvec.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathvec.h
 	"ImathExc.h"
 	"ImathLimits.h"
 	"ImathMath.h"
 	"ImathNamespace.h"
 	<iostream>
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathexc.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathexc.h
 	"ImathNamespace.h"
 	"IexBaseExc.h"
 	"ImathExport.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\iexbaseexc.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\iexbaseexc.h
 	"IexNamespace.h"
 	"IexExport.h"
 	<string>
 	<exception>
 	<sstream>
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\iexnamespace.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\iexnamespace.h
 	"IlmBaseConfig.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\iexexport.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\iexexport.h
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathexport.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathexport.h
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathlimits.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathlimits.h
 	"ImathNamespace.h"
 	<float.h>
 	<limits.h>
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathmath.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathmath.h
 	"ImathPlatform.h"
 	"ImathLimits.h"
 	"ImathNamespace.h"
 	<math.h>
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathplatform.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathplatform.h
 	<math.h>
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathbox.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imathbox.h
 	"ImathVec.h"
 	"ImathNamespace.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfforward.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfforward.h
 	"ImfNamespace.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfexport.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfexport.h
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfframebuffer.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfframebuffer.h
 	"ImfName.h"
 	"ImfPixelType.h"
 	"ImfExport.h"
@@ -143,48 +143,48 @@
 	<map>
 	<string>
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfpixeltype.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfpixeltype.h
 	"ImfNamespace.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfrgba.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfrgba.h
 	"half.h"
 	"ImfNamespace.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\half.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\half.h
 	"halfExport.h"
 	<iostream>
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\halfexport.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\halfexport.h
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfthreading.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfthreading.h
 	"ImfExport.h"
 	"ImfNamespace.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfarray.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\imfarray.h
 	"ImfForward.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\iex.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\iex.h
 	"IexMacros.h"
 	"IexBaseExc.h"
 	"IexMathExc.h"
 	"IexThrowErrnoExc.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\iexmacros.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\iexmacros.h
 	<sstream>
 	"IexExport.h"
 	"IexForward.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\iexforward.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\iexforward.h
 	"IexNamespace.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\iexmathexc.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\iexmathexc.h
 	"IexBaseExc.h"
 
-1449761607 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\iexthrowerrnoexc.h
+1449765207 d:\raytracing\raytracing-code\sdk\openexr-mingw\include\openexr\iexthrowerrnoexc.h
 	"IexBaseExc.h"
 	"IexExport.h"
 
-1453309165 source:d:\raytracing\raytracing-code\src\camera.cpp
+1453312765 source:d:\raytracing\raytracing-code\src\camera.cpp
 	<algorithm>
 	"camera.h"
 	"matrix.h"
@@ -194,80 +194,64 @@
 	"scene.h"
 	"random_generator.h"
 
-1453309165 d:\raytracing\raytracing-code\src\camera.h
+1453312765 d:\raytracing\raytracing-code\src\camera.h
 	"vector.h"
 	"matrix.h"
 	"scene.h"
 
-1453309165 d:\raytracing\raytracing-code\src\vector.h
+1467652016 d:\raytracing\raytracing-code\src\vector.h
 	<stdio.h>
 	<math.h>
 
-1453309165 d:\raytracing\raytracing-code\src\matrix.h
+1453312765 d:\raytracing\raytracing-code\src\matrix.h
 	"vector.h"
 
-1454507953 d:\raytracing\raytracing-code\src\scene.h
+1467630885 d:\raytracing\raytracing-code\src\scene.h
 	<vector>
 	<limits.h>
 	"color.h"
 	"vector.h"
 
-1454507953 d:\raytracing\raytracing-code\src\sdl.h
+1454511553 d:\raytracing\raytracing-code\src\sdl.h
 	<vector>
 	"color.h"
 	"constants.h"
 
-1453309165 d:\raytracing\raytracing-code\src\geometry.h
+1467653908 d:\raytracing\raytracing-code\src\geometry.h
 	<vector>
 	"vector.h"
 	"transform.h"
 	"scene.h"
 
-1453309165 d:\raytracing\raytracing-code\src\transform.h
+1467649651 d:\raytracing\raytracing-code\src\transform.h
 	"vector.h"
 	"matrix.h"
 	"util.h"
 
-1453309165 d:\raytracing\raytracing-code\src\random_generator.h
+1453312765 d:\raytracing\raytracing-code\src\random_generator.h
 	<random>
 
-1453309165 source:d:\raytracing\raytracing-code\src\environment.cpp
+1453312765 source:d:\raytracing\raytracing-code\src\environment.cpp
 	<string.h>
 	"environment.h"
 	"bitmap.h"
 	"util.h"
 
-1453309165 d:\raytracing\raytracing-code\src\environment.h
+1453312765 d:\raytracing\raytracing-code\src\environment.h
 	"color.h"
 	"vector.h"
 	"scene.h"
 
-1453309165 source:d:\raytracing\raytracing-code\src\geometry.cpp
+1453312765 source:d:\raytracing\raytracing-code\src\geometry.cpp
 	"geometry.h"
 	"constants.h"
 	<algorithm>
 
-1455179240 source:d:\raytracing\raytracing-code\src\main.cpp
-	<SDL/SDL.h>
-	<SDL/SDL_events.h>
-	<math.h>
-	<vector>
-	"vector.h"
-	"util.h"
-	"sdl.h"
-	"color.h"
-	"camera.h"
-	"geometry.h"
-	"shading.h"
-	"environment.h"
-	"mesh.h"
-	"random_generator.h"
-	"scene.h"
-	"lights.h"
-	"cxxptl_sdl.h"
-	"implicit_surface.h"
+1466000819 source:d:\raytracing\raytracing-code\src\main.cpp
+	"render.h"
+	<thread>
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl.h
 	"SDL_main.h"
 	"SDL_stdinc.h"
 	"SDL_audio.h"
@@ -286,14 +270,14 @@
 	"begin_code.h"
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_main.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_main.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 	"begin_code.h"
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_stdinc.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_stdinc.h
 	"SDL_config.h"
 	<sys/types.h>
 	<stdio.h>
@@ -319,7 +303,7 @@
 	<stdlib.h>
 	"close_code.h"
 
-1326110987 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_config.h
+1326114587 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_config.h
 	"SDL_platform.h"
 	"SDL_config_dreamcast.h"
 	"SDL_config_macos.h"
@@ -329,16 +313,16 @@
 	"SDL_config_os2.h"
 	"SDL_config_minimal.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_platform.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_platform.h
 
-1326110994 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_config_win32.h
+1326114594 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_config_win32.h
 	"SDL_platform.h"
 
-1326111000 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\begin_code.h
+1326114600 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\begin_code.h
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\close_code.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\close_code.h
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_audio.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_audio.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_endian.h"
@@ -348,24 +332,24 @@
 	"begin_code.h"
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_error.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_error.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_endian.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_endian.h
 	"SDL_stdinc.h"
 	<endian.h>
 	"begin_code.h"
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_mutex.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_mutex.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_thread.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_thread.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_mutex.h"
@@ -373,24 +357,24 @@
 	<process.h>
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_rwops.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_rwops.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_cdrom.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_cdrom.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_cpuinfo.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_cpuinfo.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_events.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_events.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_active.h"
@@ -401,93 +385,93 @@
 	"begin_code.h"
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_active.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_active.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_keyboard.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_keyboard.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_keysym.h"
 	"begin_code.h"
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_keysym.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_keysym.h
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_mouse.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_mouse.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_video.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_video.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_rwops.h"
 	"begin_code.h"
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_joystick.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_joystick.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_quit.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_quit.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_loadso.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_timer.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_loadso.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1325738639 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_version.h
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 d:\raytracing\raytracing-code\sdk\sdl-1.2.15\include\sdl\sdl_version.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1453309165 d:\raytracing\raytracing-code\src\shading.h
+1453312765 d:\raytracing\raytracing-code\src\shading.h
 	"color.h"
 	"bitmap.h"
 	"geometry.h"
 	"scene.h"
 
-1453309165 d:\raytracing\raytracing-code\src\mesh.h
+1453312765 d:\raytracing\raytracing-code\src\mesh.h
 	<vector>
 	"geometry.h"
 	"vector.h"
 	"bbox.h"
 
-1454887800 d:\raytracing\raytracing-code\src\bbox.h
+1454891400 d:\raytracing\raytracing-code\src\bbox.h
 	<algorithm>
 	<string>
 	"vector.h"
 	"util.h"
 
-1453309165 d:\raytracing\raytracing-code\src\lights.h
+1453312765 d:\raytracing\raytracing-code\src\lights.h
 	"scene.h"
 	"transform.h"
 
-1453309165 d:\raytracing\raytracing-code\src\cxxptl_sdl.h
+1453312765 d:\raytracing\raytracing-code\src\cxxptl_sdl.h
 	<SDL/SDL_thread.h>
 	<SDL/SDL_mutex.h>
 
-1453309165 source:d:\raytracing\raytracing-code\src\matrix.cpp
+1453312765 source:d:\raytracing\raytracing-code\src\matrix.cpp
 	<math.h>
 	"matrix.h"
 
-1454507953 source:d:\raytracing\raytracing-code\src\sdl.cpp
+1454511553 source:d:\raytracing\raytracing-code\src\sdl.cpp
 	<SDL/SDL.h>
 	<stdio.h>
 	<algorithm>
@@ -495,14 +479,14 @@
 	"bitmap.h"
 	"scene.h"
 
-1453309165 source:d:\raytracing\raytracing-code\src\shading.cpp
+1453312765 source:d:\raytracing\raytracing-code\src\shading.cpp
 	<string.h>
 	"shading.h"
 	"bitmap.h"
 	"lights.h"
 	"random_generator.h"
 
-1453309165 source:d:\raytracing\raytracing-code\src\util.cpp
+1453312765 source:d:\raytracing\raytracing-code\src\util.cpp
 	<stdio.h>
 	<string.h>
 	<ctype.h>
@@ -512,7 +496,7 @@
 	<string>
 	"util.h"
 
-1453309165 source:d:\raytracing\raytracing-code\src\cxxptl_sdl.cpp
+1453312765 source:d:\raytracing\raytracing-code\src\cxxptl_sdl.cpp
 	"cxxptl_sdl.h"
 	<stdio.h>
 	<string.h>
@@ -525,21 +509,21 @@
 	<mach/clock.h>
 	<mach/mach.h>
 
-1453309165 source:d:\raytracing\raytracing-code\src\heightfield.cpp
+1453312765 source:d:\raytracing\raytracing-code\src\heightfield.cpp
 	"heightfield.h"
 	"bitmap.h"
 	<SDL/SDL.h>
 
-1453309165 d:\raytracing\raytracing-code\src\heightfield.h
+1453312765 d:\raytracing\raytracing-code\src\heightfield.h
 	"geometry.h"
 	"bbox.h"
 
-1453309165 source:d:\raytracing\raytracing-code\src\lights.cpp
+1453312765 source:d:\raytracing\raytracing-code\src\lights.cpp
 	"lights.h"
 	"util.h"
 	"random_generator.h"
 
-1453309165 source:d:\raytracing\raytracing-code\src\mesh.cpp
+1453312765 source:d:\raytracing\raytracing-code\src\mesh.cpp
 	<stdio.h>
 	<string.h>
 	<algorithm>
@@ -549,7 +533,7 @@
 	"constants.h"
 	"color.h"
 
-1453309165 source:d:\raytracing\raytracing-code\src\random_generator.cpp
+1453312765 source:d:\raytracing\raytracing-code\src\random_generator.cpp
 	<math.h>
 	<SDL/SDL.h>
 	"random_generator.h"
@@ -561,7 +545,7 @@
 	"color.h"
 	"sdl.h"
 
-1454941072 source:d:\raytracing\raytracing-code\src\scene.cpp
+1467649864 source:d:\raytracing\raytracing-code\src\scene.cpp
 	<stdio.h>
 	<ctype.h>
 	<vector>
@@ -587,15 +571,56 @@
 	"lights.h"
 	<assert.h>
 	"implicit_surface.h"
+	<thread>
 
-1455149359 source:d:\raytracing\raytracing-code\src\implicit_surface.cpp
+1455152959 source:d:\raytracing\raytracing-code\src\implicit_surface.cpp
 	"implicit_surface.h"
 
-1455151214 d:\raytracing\raytracing-code\src\implicit_surface.h
+1455154814 d:\raytracing\raytracing-code\src\implicit_surface.h
 	<functional>
 	<string>
 	<stack>
 	<cmath>
 	<list>
 	"geometry.h"
+
+1465996209 d:\raytracing\raytracing-code\src\render.cpp
+	<SDL/SDL.h>
+	<SDL/SDL_events.h>
+	<math.h>
+	<vector>
+	"vector.h"
+	"util.h"
+	"sdl.h"
+	"color.h"
+	"camera.h"
+	"geometry.h"
+	"shading.h"
+	"environment.h"
+	"mesh.h"
+	"random_generator.h"
+	"scene.h"
+	"lights.h"
+	"cxxptl_sdl.h"
+	"implicit_surface.h"
+
+1466000882 d:\raytracing\raytracing-code\src\render.h
+	<SDL/SDL.h>
+	<SDL/SDL_events.h>
+	<math.h>
+	<vector>
+	"vector.h"
+	"util.h"
+	"sdl.h"
+	"color.h"
+	"camera.h"
+	"geometry.h"
+	"shading.h"
+	"environment.h"
+	"mesh.h"
+	"random_generator.h"
+	"scene.h"
+	"lights.h"
+	"cxxptl_sdl.h"
+	"implicit_surface.h"
 

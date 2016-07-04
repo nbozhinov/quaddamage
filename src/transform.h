@@ -108,6 +108,8 @@ private:
 	Matrix inverseTransform;
 	Matrix transposedInverse;
 	Vector offset;
+
+    friend class Animation;
 };
 
 #endif // __TRANSFORM_H__

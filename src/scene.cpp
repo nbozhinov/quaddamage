@@ -48,6 +48,7 @@
 #include "lights.h"
 #include <assert.h>
 #include "implicit_surface.h"
+#include <thread>
 using std::vector;
 using std::string;
 
@@ -436,6 +437,14 @@ bool DefaultSceneParser::parse(const char* filename, Scene* ss)
 	curObj = NULL;
 	curLine = 0;
 	s->environment = NULL;
+	s->animations.clear();
+	s->geometries.clear();
+    s->shaders.clear();
+	s->textures.clear();
+	s->nodes.clear();
+	s->lights.clear();
+	s->frameNo = 0;
+	///////////////////////////////////////////////////////////////
 	//
 	FILE* f = fopen(filename, "rt");
 	if (!f) {
@@ -532,6 +541,7 @@ bool DefaultSceneParser::parse(const char* filename, Scene* ss)
 				case ELEM_ENVIRONMENT: s->environment = (Environment*) curObj; break;
 				case ELEM_CAMERA: s->camera = (Camera*)curObj; break;
 				case ELEM_LIGHT: s->lights.push_back((Light*) curObj); break;
+				case ELEM_ANIMATION: s->animations.push_back((Animation*) curObj); break;
 				default: break;
 			}
 		} else {
@@ -563,7 +573,7 @@ bool DefaultSceneParser::parse(const char* filename, Scene* ss)
 		return false;
 	}
 	const int element_types_order[] = {
-		ELEM_SETTINGS, ELEM_CAMERA, ELEM_ENVIRONMENT, ELEM_LIGHT, ELEM_GEOMETRY, ELEM_TEXTURE, ELEM_SHADER, ELEM_NODE, //ELEM_ATMOSPHERIC
+		ELEM_SETTINGS, ELEM_CAMERA, ELEM_ENVIRONMENT, ELEM_LIGHT, ELEM_GEOMETRY, ELEM_TEXTURE, ELEM_SHADER, ELEM_NODE, ELEM_ANIMATION //ELEM_ATMOSPHERIC
 	};
 	// process all parsed blocks, but first process all singletons, then process geometries first, etc.
 	for (int ei = 0; ei < (int) (sizeof(element_types_order) / sizeof(element_types_order[0])); ei++) {
@@ -753,6 +763,7 @@ Scene::Scene()
 {
 	environment = NULL;
 	camera = NULL;
+	lastMod = time_t(0);
 }
 
 template<typename T>
@@ -780,7 +791,13 @@ Scene::~Scene()
 bool Scene::parseScene(const char* filename)
 {
 	DefaultSceneParser parser;
-	return parser.parse(filename, this);
+	struct stat statbuf;
+	stat(filename, &statbuf);
+	if (statbuf.st_mtime != lastMod) {
+        lastMod = statbuf.st_mtime;
+        return parser.parse(filename, this);
+	}
+	return true;
 }
 
 void Scene::beginRender()
@@ -798,6 +815,7 @@ void Scene::beginRender()
 
 void Scene::beginFrame()
 {
+	for (auto& element: animations) element->apply(this->frameNo);
 	for (auto& element: geometries) element->beginFrame();
 	for (auto& element: textures) element->beginFrame();
 	for (auto& element: shaders) element->beginFrame();
@@ -807,6 +825,7 @@ void Scene::beginFrame()
 	camera->beginFrame();
 	settings.beginFrame();
 	if (environment) environment->beginFrame();
+	++frameNo;
 }
 
 GlobalSettings::GlobalSettings()
@@ -815,14 +834,15 @@ GlobalSettings::GlobalSettings()
 	frameHeight = RESY;
 	wantAA = true;
 	dbg = false;
-	maxTraceDepth = 4;
+	maxTraceDepth = 3;
 	ambientLight.makeZero();
 	saturation = 1;
 	wantPrepass = true;
 	gi = false;
-	numPaths = 10;
-	numThreads = 0;
-	interactive = fullscreen = false;
+	numPaths = 6;
+	numThreads = std::thread::hardware_concurrency();
+	interactive = true;
+	fullscreen = false;
 }
 
 void GlobalSettings::fillProperties(ParsedBlock& pb)
@@ -849,6 +869,7 @@ bool GlobalSettings::needAApass()
 
 SceneElement* DefaultSceneParser::newSceneElement(const char* className)
 {
+    if (!strcmp(className, "Animation")) return new Animation;
     if (!strcmp(className, "ImplicitSurface")) return new ImplicitSurface;
 	if (!strcmp(className, "GlobalSettings")) return &s->settings;
 	if (!strcmp(className, "Plane")) return new Plane;
